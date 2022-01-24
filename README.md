@@ -8,3 +8,4 @@
 
 demo: 
   - react-app: https://hello-world-widget.vercel.app/
+  - html-site: https://demolution.fra1.digitaloceanspaces.com/other/hello-world-widget/index.html
