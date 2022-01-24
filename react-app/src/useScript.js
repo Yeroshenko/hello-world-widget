@@ -18,5 +18,5 @@ export const useImportScript = (resourceUrl, onLoad, onUnmount) => {
             onUnmount && onUnmount()
             document.body.removeChild(script)
         };
-    }, [resourceUrl]);
+    }, [resourceUrl, onLoad, onUnmount]);
 };
