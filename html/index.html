@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello world</title>
+
+    <style>
+      *, *:before, *:after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: #111;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div id="widget-container"></div>
+</div>
+
+<script src="https://demolution.fra1.digitaloceanspaces.com/other/hello-world-widget/widget-init.js" defer></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        HelloWorldWidget.init({
+            container: document.getElementById('widget-container'),
+        });
+    })
+</script>
+</body>
+
+</html>
